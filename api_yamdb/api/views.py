@@ -1,19 +1,20 @@
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
-from django_filters.rest_framework import DjangoFilterBackend
 
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import (filters, mixins, permissions, response, status,
+                            viewsets)
 from rest_framework.decorators import action, api_view
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
-from rest_framework import (filters, mixins, viewsets, permissions,
-                            response, status)
+
+from reviews.models import Category, Genre, Review, Title, User
 
 from . import serializers
-from reviews.models import Category, Genre, Review, Title, User
 from .filters import TitleFilter
 from .permissions import (IsAdminOrReadOnly, IsAuthorOrReadOnly,
                           IsModeratorOrReadOnly, IsOwnerOrIsAdmin)
-from .utils import send_email, code_gen
+from .utils import code_gen, send_email
 
 
 class CreateListDestroyViewSet(mixins.CreateModelMixin,
