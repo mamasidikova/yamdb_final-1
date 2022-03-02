@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: deffron/yamdb_final_web:latest
+    image: deffron/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/app/static/
