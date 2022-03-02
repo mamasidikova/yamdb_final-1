@@ -2,7 +2,7 @@
 REST API для сервиса YaMDb — базы отзывов о фильмах, книгах и музыке. (Коллективный проект 3 студентов Яндекс.Практикум)
 
 ## Технологический стек
-![Django-app workflow](https://github.com/needred/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+[![Django-app workflow](https://github.com/DeffronMax/yamdb_final/actions/workflows/main.yml/badge.svg)](https://github.com/DeffronMax/yamdb_final/actions/workflows/main.yml)
 [![Python](https://img.shields.io/badge/-Python-464646?style=flat&logo=Python&logoColor=56C0C0&color=008080)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/-Django-464646?style=flat&logo=Django&logoColor=56C0C0&color=008080)](https://www.djangoproject.com/)
 [![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?style=flat&logo=Django%20REST%20Framework&logoColor=56C0C0&color=008080)](https://www.django-rest-framework.org/)
@@ -37,6 +37,10 @@ pytest
 Отредактируйте файл `nginx/default.conf` и в строке `server_name` впишите IP виртуальной машины (сервера).  
 Скопируйте подготовленные файлы `docker-compose.yaml` и `nginx/default.conf` из вашего проекта на сервер:
 ```
+Зайдите в репозиторий на локальной машине и отправьте файлы на сервер.
+Можно сделать 2умя способами, первый склонировав репозиторий, переместив нужные файлы командой mv
+после чего удалить остаток rm -rf hw05_final
+Или 2ой вариант:
 scp docker-compose.yaml <username>@<host>/home/<username>/docker-compose.yaml
 sudo mkdir nginx
 scp default.conf <username>@<host>/home/<username>/nginx/default.conf
@@ -73,7 +77,7 @@ git push
 
 Клонируйте репозиторий и перейдите в него в командной строке:
 ```
-git clone https://github.com/needred/yamdb_final.git
+git clone https://github.com/deffronmax/yamdb_final.git
 cd yamdb_final
 ```
 Создайте файл .env командой `touch .env` и добавьте в него переменные окружения для работы с базой данных:
@@ -196,15 +200,7 @@ python3 manage.py shell
 python manage.py loaddata infra/fixtures.json
 ```
 
-## Ссылки
-### Документация API YaMDb - эндпойнт:
-```json
-/redoc/
-```
-http:///redoc/
-### Развёрнутый проект:
-http:///api/v1/  
-http:///admin/
-
 ## Авторы
-Max
+Яков Крис — Тимлид
+Максим Бубневич — Разработчик
+Андрей Завьялов — Разработчик
