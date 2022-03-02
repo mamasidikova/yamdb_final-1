@@ -205,5 +205,6 @@ python manage.py loaddata infra/fixtures.json
 Максим Бубневич — Разработчик
 Андрей Завьялов — Разработчик
 
-## Проект
-https://github.com/YaakovKris/api_yamdb
+## Развёрнутый проект
+http://62.84.120.240/api/v1/
+http://62.84.120.240/admin/
