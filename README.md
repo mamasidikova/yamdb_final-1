@@ -204,3 +204,6 @@ python manage.py loaddata infra/fixtures.json
 Яков Крис — Тимлид
 Максим Бубневич — Разработчик
 Андрей Завьялов — Разработчик
+
+## Проект
+https://github.com/YaakovKris/api_yamdb
