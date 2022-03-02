@@ -74,6 +74,7 @@ WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+# data
 
 DATABASES = {
     'default': {
