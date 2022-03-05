@@ -11,7 +11,7 @@ services:
   web:
     image: deffron/yamdb_final_web:latest
     build:
-      context: ../api_yamdb
+      context: ../yamdb_final_web
       dockerfile: Dockerfile
     restart: always
     volumes:
