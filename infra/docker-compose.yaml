@@ -10,9 +10,6 @@ services:
 
   web:
     image: deffron/api_yamdb:latest
-    build:
-      context: ../api_yamdb
-      dockerfile: Dockerfile
     restart: always
     volumes:
       - static_value:/app/static/
