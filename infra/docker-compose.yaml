@@ -9,6 +9,7 @@ services:
       - ./.env
 
   web:
+    image: deffron/yamdb_final_web:latest
     build:
       context: ../api_yamdb
       dockerfile: Dockerfile
@@ -16,6 +17,10 @@ services:
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
+    depends_on:
+      - db
+    env_file:
+      - ./.env
 
   nginx:
     image: nginx:1.21.3-alpine
