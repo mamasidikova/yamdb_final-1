@@ -9,9 +9,9 @@ services:
       - ./.env
 
   web:
-    image: deffron/yamdb_final_web:latest
+    image: deffron/api_yamdb:latest
     build:
-      context: ../yamdb_final_web
+      context: ../api_yamdb
       dockerfile: Dockerfile
     restart: always
     volumes:
