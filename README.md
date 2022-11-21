@@ -104,14 +104,3 @@ docker-compose exec web python manage.py createsuperuser
 ```
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
-
-
-## Авторы
-Яков Крис — Тимлид
-Максим Бубневич — Разработчик
-Андрей Завьялов — Разработчик
-
-## Развёрнутый проект
-http://62.84.120.240/api/v1/
-http://62.84.120.240/admin/
-http://62.84.120.240/redoc/
